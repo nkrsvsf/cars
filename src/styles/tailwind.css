@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+body {
+  @apply bg-blackBg;
+  overflow: hidden;
+  height: 100vh;
+  padding: 0 !important;
+}
+
+#root {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+html {
+  @apply bg-blackBg;
+  height: auto;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.scroll-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.titleH3B {
+  @apply text-[16px] font-medium text-white;
+}
+
+.transition-ease {
+  transition: all 0.5s linear;
+}
